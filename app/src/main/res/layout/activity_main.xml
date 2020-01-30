@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="360dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/registration_form" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/your_name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:text="@string/nme" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/your_phone"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:text="@string/phn" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/e_mail"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:text="@string/eml" />
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/date_of_birth"
+            android:importantForAutofill="no"
+            android:inputType="date"
+            android:text="@string/date" />
+
+        <EditText
+            android:inputType="textPersonName"
+            android:id="@+id/adr"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/address"
+            android:importantForAutofill="no"
+            android:text="@string/adr"/>
+
+        <Button
+            android:id="@+id/reg"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:text="@string/register" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
